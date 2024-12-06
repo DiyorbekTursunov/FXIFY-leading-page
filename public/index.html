@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FXIFY Features</title>
     <link rel="stylesheet" href="./css/styles.css" />
-    <link rel="stylesheet" href="../src/styles.css" />
+    <link rel="stylesheet" href="../src/home.css" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
@@ -14,11 +14,12 @@
   </head>
 
   <body class="bg-[#0D0E10]">
-    <div class="flex gap-6">
+    <div class="flex">
       <!-- Site bar -->
-      <div class="max-w-[17%] w-full h-full">
+      <div id="side_bar_container" class="w-full h-full">
         <aside
-          class="max-w-[17%] w-full border-r border-r-white/10 py-10 px-6 fixed"
+          id="side_bar"
+          class="w-[17%] h-full border-r border-r-white/10 py-10 px-6 fixed left-0 transition-all duration-300"
         >
           <a href="#" class="mb-6 flex">
             <img src="./img/header/logo.svg" alt="logo" />
@@ -936,7 +937,9 @@
       <!-- Site bar end -->
 
       <!-- Menu start -->
-      <main class="max-w-[83%] w-full flex justify-center">
+      <main
+      id="main_content" class="w-full transition-all duration-300 max-w-[83%]"
+      >
         <div class="w-full pt-6 px-6">
           <section
             style="
@@ -1176,7 +1179,8 @@
             style="background-image: url(./img/home/shadow_over_view.png)"
           >
             <div class="flex items-center gap-4">
-              <div
+              <button
+                id="side_bar_button"
                 class="w-[56px] h-[56px] flex justify-center items-center rounded-[50%] border border-image-gradient-custom"
               >
                 <svg
@@ -1220,7 +1224,7 @@
                     stroke-linecap="round"
                   />
                 </svg>
-              </div>
+              </button>
 
               <div class="text-[#fff]">
                 <h2 class="text-[24px]">Welcome back, Username!</h2>
@@ -1235,7 +1239,7 @@
               class="max-w-[1200px] mx-auto text-[#fff] flex justify-evenly xl:gap-10 gap-2 pt-[40px]"
             >
               <div
-                class="bg-no-repeat bg-cover w-full rounded-2xl "
+                class="bg-no-repeat bg-cover w-full rounded-2xl"
                 style="background-image: url(./img/home/over_view_section.png)"
               >
                 <div
@@ -1376,7 +1380,7 @@
               </div>
 
               <div
-                class="bg-no-repeat bg-cover w-full rounded-2xl "
+                class="bg-no-repeat bg-cover w-full rounded-2xl"
                 style="
                   background-image: url(./img/home/over_view_section_2.png);
                 "

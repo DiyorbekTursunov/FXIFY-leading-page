@@ -1,3 +1,31 @@
+// Get references to DOM elements
+const sideBarButton = document.getElementById("side_bar_button");
+const sideBar = document.getElementById("side_bar");
+const sideBarContainer = document.getElementById("side_bar_container");
+const mainContent = document.getElementById("main_content");
+
+// Toggle sidebar and adjust layout
+sideBarButton.addEventListener("click", () => {
+  const isSidebarOpen = sideBar.classList.toggle("left-[0]"); // Toggle sidebar open/closed
+
+  // Log the current state of the sidebar
+  console.log(isSidebarOpen ? "Sidebar opened" : "Sidebar closed");
+
+  // Adjust the main content's width based on sidebar state
+  if (isSidebarOpen) {
+    mainContent.classList.add("max-w-[83%]"); // Main content shrinks when sidebar is visible
+    mainContent.classList.remove("w-full"); // Restore normal width of main content
+  } else {
+    mainContent.classList.remove("max-w-[83%]"); // Main content expands to full width when sidebar is hidden
+    mainContent.classList.add("w-full"); // Main content takes full width when sidebar is hidden
+  }
+});
+
+
+
+
+
+
 var swiper = new Swiper(".mySwiper", {
   navigation: {
     nextEl: ".swiper-button-next1",
