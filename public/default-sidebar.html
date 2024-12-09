@@ -17,7 +17,9 @@
     <div class="flex gap-6">
       <!-- Site bar -->
       <div class="max-w-[17%] w-full h-full">
-        <aside class="max-w-[17%] w-full border-r border-r-white/10 py-10 px-6 fixed">
+        <aside
+          class="max-w-[17%] w-full border-r border-r-white/10 py-10 px-6 fixed"
+        >
           <div class="mb-6">
             <img src="./img/header/logo.svg" alt="logo" />
           </div>
@@ -53,9 +55,32 @@
             <p class="py-3 px-3.5 text-white/40 uppercase text-sm">menu</p>
             <ul>
               <li
-                class="py-3 px-3.5 relative"
+                class="py-3 px-3.5 relative rounded-lg border border-[#FFFFFF1A]"
+                style="
+                  border-image-source: linear-gradient(
+                      0deg,
+                      rgba(255, 255, 255, 0.1),
+                      rgba(255, 255, 255, 0.1)
+                    ),
+                    linear-gradient(
+                      76.3deg,
+                      rgba(63, 185, 254, 0) 48.85%,
+                      #4852f5 76.63%,
+                      rgba(63, 185, 254, 0) 103.95%
+                    );
+                "
               >
-                <a class="text-[#fff]/40 text-sm flex items-center gap-3" href="#">
+                <img
+                  class="absolute bottom-0 left-0"
+                  src="./img/header/button-shadow.png"
+                  alt="shadow"
+                />
+                <img
+                  class="absolute right-0"
+                  src="./img/header/dots.png"
+                  alt="dots"
+                />
+                <a class="text-[#fff] text-sm flex items-center gap-3" href="#">
                   <span>
                     <svg
                       width="20"
@@ -486,10 +511,8 @@
                   Billing
                 </a>
               </li>
-
-
               <li
-                class="py-3 px-3.5 relative rounded-lg border border-[#FFFFFF1A]"
+                class="py-3 px-3.5 rounded-lg border border-transparent"
                 style="
                   border-image-source: linear-gradient(
                       0deg,
@@ -504,68 +527,60 @@
                     );
                 "
               >
-                <img
-                  class="absolute bottom-0 left-0"
-                  src="./img/header/button-shadow.png"
-                  alt="shadow"
-                />
-                <img
-                  class="absolute right-0"
-                  src="./img/header/dots.png"
-                  alt="dots"
-                />
-                <a class="text-[#fff] text-sm flex items-center gap-3" href="#">
-                    <span>
-                        <svg
-                          width="20"
-                          height="20"
-                          viewBox="0 0 20 20"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <g opacity="0.5">
-                            <path
-                              d="M4.16699 12.4998V6.6665"
-                              stroke="currentColor"
-                              stroke-width="1.5"
-                              stroke-linecap="round"
-                              stroke-linejoin="round"
-                            />
-                            <path
-                              d="M4.37533 18.3332C5.8711 18.3332 7.08366 17.1206 7.08366 15.6248C7.08366 14.1291 5.8711 12.9165 4.37533 12.9165C2.87955 12.9165 1.66699 14.1291 1.66699 15.6248C1.66699 17.1206 2.87955 18.3332 4.37533 18.3332Z"
-                              stroke="currentColor"
-                              stroke-width="1.5"
-                              stroke-linecap="round"
-                              stroke-linejoin="round"
-                            />
-                            <path
-                              d="M4.16699 6.6665C5.5477 6.6665 6.66699 5.54722 6.66699 4.1665C6.66699 2.78579 5.5477 1.6665 4.16699 1.6665C2.78628 1.6665 1.66699 2.78579 1.66699 4.1665C1.66699 5.54722 2.78628 6.6665 4.16699 6.6665Z"
-                              stroke="currentColor"
-                              stroke-width="1.5"
-                              stroke-linecap="round"
-                              stroke-linejoin="round"
-                            />
-                            <path
-                              d="M15.833 6.6665C17.2137 6.6665 18.333 5.54722 18.333 4.1665C18.333 2.78579 17.2137 1.6665 15.833 1.6665C14.4523 1.6665 13.333 2.78579 13.333 4.1665C13.333 5.54722 14.4523 6.6665 15.833 6.6665Z"
-                              stroke="currentColor"
-                              stroke-width="1.5"
-                              stroke-linecap="round"
-                              stroke-linejoin="round"
-                            />
-                            <path
-                              d="M4.27539 12.5C4.65039 11.0416 5.98372 9.9583 7.55872 9.96663L10.4171 9.97498C12.6004 9.98331 14.4587 8.5833 15.1421 6.6333"
-                              stroke="currentColor"
-                              stroke-width="1.5"
-                              stroke-linecap="round"
-                              stroke-linejoin="round"
-                            />
-                          </g>
-                        </svg>
-                      </span>
-                      Affiliate Program
+                <a
+                  class="text-[#fff]/40 text-sm flex items-center gap-3"
+                  href="#"
+                >
+                  <span>
+                    <svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 20 20"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g opacity="0.5">
+                        <path
+                          d="M4.16699 12.4998V6.6665"
+                          stroke="currentColor"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M4.37533 18.3332C5.8711 18.3332 7.08366 17.1206 7.08366 15.6248C7.08366 14.1291 5.8711 12.9165 4.37533 12.9165C2.87955 12.9165 1.66699 14.1291 1.66699 15.6248C1.66699 17.1206 2.87955 18.3332 4.37533 18.3332Z"
+                          stroke="currentColor"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M4.16699 6.6665C5.5477 6.6665 6.66699 5.54722 6.66699 4.1665C6.66699 2.78579 5.5477 1.6665 4.16699 1.6665C2.78628 1.6665 1.66699 2.78579 1.66699 4.1665C1.66699 5.54722 2.78628 6.6665 4.16699 6.6665Z"
+                          stroke="currentColor"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M15.833 6.6665C17.2137 6.6665 18.333 5.54722 18.333 4.1665C18.333 2.78579 17.2137 1.6665 15.833 1.6665C14.4523 1.6665 13.333 2.78579 13.333 4.1665C13.333 5.54722 14.4523 6.6665 15.833 6.6665Z"
+                          stroke="currentColor"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M4.27539 12.5C4.65039 11.0416 5.98372 9.9583 7.55872 9.96663L10.4171 9.97498C12.6004 9.98331 14.4587 8.5833 15.1421 6.6333"
+                          stroke="currentColor"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </g>
+                    </svg>
+                  </span>
+                  Affiliate Program
                 </a>
               </li>
-
               <li
                 class="py-3 px-3.5 rounded-lg border border-transparent"
                 style="
@@ -983,6 +998,26 @@
                 <li><a class="text-white/50 text-sm" href="#">Dashboard</a></li>
                 <span>
                   <svg
+                    width="14"
+                    height="14"
+                    class="opacity-50"
+                    viewBox="0 0 14 14"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M5.4231 11.0425L8.75101 7.7146C9.14403 7.32158 9.14403 6.67846 8.75101 6.28544L5.4231 2.95752"
+                      stroke="white"
+                      stroke-width="1.2"
+                      stroke-miterlimit="10"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </span>
+                <li><a class="text-white/50 text-sm" href="#">Accounts</a></li>
+                <span>
+                  <svg
                     class="opacity-50"
                     width="14"
                     height="14"
@@ -1000,9 +1035,7 @@
                     />
                   </svg>
                 </span>
-                <li>
-                  <a class="text-white text-sm" href="#">Affiliate Program</a>
-                </li>
+                <li><a class="text-white text-sm" href="#">Analytics</a></li>
               </ul>
             </div>
             <div class="flex items-center gap-4">
@@ -1160,431 +1193,7 @@
             </div>
           </section>
 
-          <section
-            class="pt-[75px] relative px-10 border border-white/10 border-b-0"
-            style="
-              background: linear-gradient(
-                164.05deg,
-                rgba(255, 255, 255, 0.03) 4.26%,
-                rgba(13, 14, 16, 0) 84.16%
-              );
-            "
-          >
-            <div class="max-w-[1200px] mx-auto">
-              <img
-                class="absolute top-0 left-0 w-full h-full -z-10 select-none"
-                src="./img/affiliate/BG.png"
-                alt="bg"
-              />
-              <div class="mb-[64px] z-10">
-                <span class="mb-6 flex justify-center">
-                  <svg
-                    width="57"
-                    height="56"
-                    viewBox="0 0 57 56"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <g clip-path="url(#clip0_1_4200)">
-                      <rect
-                        x="0.5"
-                        width="56"
-                        height="56"
-                        rx="28"
-                        fill="#4852F5"
-                        fill-opacity="0.15"
-                      />
-                      <g filter="url(#filter0_d_1_4200)">
-                        <path
-                          d="M22.667 30.4993V24.666"
-                          stroke="white"
-                          stroke-width="1.5"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        />
-                        <path
-                          d="M22.8753 36.3327C24.3711 36.3327 25.5837 35.1201 25.5837 33.6243C25.5837 32.1286 24.3711 30.916 22.8753 30.916C21.3796 30.916 20.167 32.1286 20.167 33.6243C20.167 35.1201 21.3796 36.3327 22.8753 36.3327Z"
-                          stroke="white"
-                          stroke-width="1.5"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        />
-                        <path
-                          d="M22.667 24.666C24.0477 24.666 25.167 23.5467 25.167 22.166C25.167 20.7853 24.0477 19.666 22.667 19.666C21.2863 19.666 20.167 20.7853 20.167 22.166C20.167 23.5467 21.2863 24.666 22.667 24.666Z"
-                          stroke="white"
-                          stroke-width="1.5"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        />
-                        <path
-                          d="M34.333 24.666C35.7137 24.666 36.833 23.5467 36.833 22.166C36.833 20.7853 35.7137 19.666 34.333 19.666C32.9523 19.666 31.833 20.7853 31.833 22.166C31.833 23.5467 32.9523 24.666 34.333 24.666Z"
-                          stroke="white"
-                          stroke-width="1.5"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        />
-                        <path
-                          d="M22.7754 30.4995C23.1504 29.0412 24.4837 27.9578 26.0587 27.9661L28.9171 27.9745C31.1004 27.9828 32.9587 26.5828 33.6421 24.6328"
-                          stroke="white"
-                          stroke-width="1.5"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        />
-                      </g>
-                      <g filter="url(#filter1_f_1_4200)">
-                        <ellipse
-                          cx="29"
-                          cy="49"
-                          rx="16.5"
-                          ry="16"
-                          fill="#4852F5"
-                          fill-opacity="0.6"
-                        />
-                      </g>
-                    </g>
-                    <rect
-                      x="1"
-                      y="0.5"
-                      width="55"
-                      height="55"
-                      rx="27.5"
-                      stroke="url(#paint0_linear_1_4200)"
-                    />
-                    <defs>
-                      <filter
-                        id="filter0_d_1_4200"
-                        x="8.5"
-                        y="8"
-                        width="40"
-                        height="40"
-                        filterUnits="userSpaceOnUse"
-                        color-interpolation-filters="sRGB"
-                      >
-                        <feFlood
-                          flood-opacity="0"
-                          result="BackgroundImageFix"
-                        />
-                        <feColorMatrix
-                          in="SourceAlpha"
-                          type="matrix"
-                          values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-                          result="hardAlpha"
-                        />
-                        <feOffset />
-                        <feGaussianBlur stdDeviation="5" />
-                        <feComposite in2="hardAlpha" operator="out" />
-                        <feColorMatrix
-                          type="matrix"
-                          values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.4 0"
-                        />
-                        <feBlend
-                          mode="normal"
-                          in2="BackgroundImageFix"
-                          result="effect1_dropShadow_1_4200"
-                        />
-                        <feBlend
-                          mode="normal"
-                          in="SourceGraphic"
-                          in2="effect1_dropShadow_1_4200"
-                          result="shape"
-                        />
-                      </filter>
-                      <filter
-                        id="filter1_f_1_4200"
-                        x="-7.5"
-                        y="13"
-                        width="73"
-                        height="72"
-                        filterUnits="userSpaceOnUse"
-                        color-interpolation-filters="sRGB"
-                      >
-                        <feFlood
-                          flood-opacity="0"
-                          result="BackgroundImageFix"
-                        />
-                        <feBlend
-                          mode="normal"
-                          in="SourceGraphic"
-                          in2="BackgroundImageFix"
-                          result="shape"
-                        />
-                        <feGaussianBlur
-                          stdDeviation="10"
-                          result="effect1_foregroundBlur_1_4200"
-                        />
-                      </filter>
-                      <linearGradient
-                        id="paint0_linear_1_4200"
-                        x1="78.5"
-                        y1="22"
-                        x2="73.2555"
-                        y2="-6.98719"
-                        gradientUnits="userSpaceOnUse"
-                      >
-                        <stop stop-color="#4852F5" stop-opacity="0.2" />
-                        <stop offset="1" stop-color="#4852F5" />
-                      </linearGradient>
-                      <clipPath id="clip0_1_4200">
-                        <rect
-                          x="0.5"
-                          width="56"
-                          height="56"
-                          rx="28"
-                          fill="white"
-                        />
-                      </clipPath>
-                    </defs>
-                  </svg>
-                </span>
-                <h3
-                  class="text-white text-[32px] mb-4 text-center leading-[35.2px]"
-                >
-                  Welcome to <br />
-                  our Affiliate Program
-                </h3>
-                <p class="text-white/50 text-base text-center mb-6">
-                  Apply to become an affiliate
-                </p>
-                <div class="flex items-center gap-4 justify-center">
-                  <a
-                    class="inline-flex py-3.5 relative px-5 bg-[#3A48E0] border border-[#99DAFF4D] rounded-lg hover:opacity-65 active:opacity-55 transition-all duration-300 items-center gap-3 text-white text-sm"
-                    href="#"
-                  >
-                    <img
-                      class="absolute bottom-0 left-0"
-                      src="./img/affiliate/btn-shadow.png"
-                      alt="shadow"
-                    />
-                    Apply Now
-                  </a>
-                  <a
-                    class="inline-flex group hover:opacity-65 active:opacity-55 transition-all duration-300 py-3.5 px-4 rounded-lg items-center gap-3 text-white text-sm border border-white/10"
-                    style="
-                      background: linear-gradient(
-                        185.85deg,
-                        rgba(255, 255, 255, 0.1) 15.16%,
-                        rgba(255, 255, 255, 0) 86.96%
-                      );
-                    "
-                    href="#"
-                  >
-                    Affiliate Program FAQs
-                    <span
-                      class="transition-all group-hover:translate-x-1 duration-300"
-                    >
-                      <svg
-                        width="17"
-                        height="16"
-                        viewBox="0 0 17 16"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M10.1191 3.95312L14.1658 7.99979L10.1191 12.0465"
-                          stroke="currentColor"
-                          stroke-width="1.5"
-                          stroke-miterlimit="10"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        />
-                        <path
-                          d="M2.83398 8H14.054"
-                          stroke="currentColor"
-                          stroke-width="1.5"
-                          stroke-miterlimit="10"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        />
-                      </svg>
-                    </span>
-                  </a>
-                </div>
-              </div>
-              <div class="max-w-[892px] mx-auto mb-[60px]">
-                <h3 class="text-white text-base mb-5">How it works</h3>
-                <div class="grid grid-cols-4 gap-4">
-                  <div
-                    class="px-4 pt-4 pb-10 gap-[80px] relative flex overflow-hidden flex-col border border-white/10 max-w-[211px] w-full rounded-2xl"
-                    style="
-                      background: linear-gradient(
-                        165.83deg,
-                        rgba(255, 255, 255, 0.024) 4.29%,
-                        rgba(255, 255, 255, 0.01) 72.39%
-                      );
-                    "
-                  >
-                    <img
-                      class="absolute top-0 left-0"
-                      src="./img/affiliate/step-1.png"
-                      alt="icon"
-                    />
-                    <p class="text-white text-sm">1.</p>
-                    <div class="flex flex-col gap-4 mt-auto">
-                      <h3 class="text-white text-sm">
-                        Copy and share <br />
-                        your link
-                      </h3>
-                      <p class="text-white/50 text-sm">
-                        Send directly or <br />
-                        share with your <br />
-                        subscribers
-                      </p>
-                    </div>
-                  </div>
-
-                  <div
-                    class="px-4 pt-4 pb-10 gap-[80px] relative flex overflow-hidden flex-col border border-white/10 max-w-[211px] w-full rounded-2xl"
-                    style="
-                      background: linear-gradient(
-                        165.83deg,
-                        rgba(255, 255, 255, 0.024) 4.29%,
-                        rgba(255, 255, 255, 0.01) 72.39%
-                      );
-                    "
-                  >
-                    <img
-                      class="absolute top-0 left-0"
-                      src="./img/affiliate/step-2.png"
-                      alt="icon"
-                    />
-                    <p class="text-white text-sm">2.</p>
-                    <div class="flex flex-col gap-4 mt-auto">
-                      <h3 class="text-white text-sm">
-                        Wait until someone <br />
-                        buys our challenge
-                      </h3>
-                      <p class="text-white/50 text-sm">
-                        The purchase must be <br />
-                        made through your <br />
-                        unique link
-                      </p>
-                    </div>
-                  </div>
-
-                  <div
-                    class="px-4 pt-4 pb-10 gap-[80px] relative flex overflow-hidden flex-col border border-white/10 max-w-[211px] w-full rounded-2xl"
-                    style="
-                      background: linear-gradient(
-                        165.83deg,
-                        rgba(255, 255, 255, 0.024) 4.29%,
-                        rgba(255, 255, 255, 0.01) 72.39%
-                      );
-                    "
-                  >
-                    <img
-                      class="absolute top-0 left-0"
-                      src="./img/affiliate/step-3.png"
-                      alt="icon"
-                    />
-                    <p class="text-white text-sm">3.</p>
-                    <div class="flex flex-col gap-4 mt-auto">
-                      <h3 class="text-white text-sm">Get up to 15%</h3>
-                      <p class="text-white/50 text-sm">
-                        For each purchase <br />
-                        through your link, <br />
-                        get 12% of the <br />
-                        purchase amount
-                      </p>
-                    </div>
-                  </div>
-
-                  <div
-                    class="px-4 pt-4 pb-10 gap-[80px] relative flex overflow-hidden flex-col border border-white/10 max-w-[211px] w-full rounded-2xl"
-                    style="
-                      background: linear-gradient(
-                        165.83deg,
-                        rgba(255, 255, 255, 0.024) 4.29%,
-                        rgba(255, 255, 255, 0.01) 72.39%
-                      );
-                    "
-                  >
-                    <img
-                      class="absolute top-0 left-0"
-                      src="./img/affiliate/step-4.png"
-                      alt="icon"
-                    />
-                    <p class="text-white text-sm">4.</p>
-                    <div class="flex flex-col gap-4 mt-auto">
-                      <h3 class="text-white text-sm">Request Payout</h3>
-                      <p class="text-white/50 text-sm">
-                        You do this when you reach a minimum of $100 in total
-                        earnings. You will be paid out on the last Friday of the
-                        month
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <footer class="pb-[52px]">
-                <div
-                  class="rounded-2xl max-w-[892px] mx-auto border border-white/10 border-b-0"
-                  style="
-                    background: linear-gradient(
-                      165.83deg,
-                      rgba(255, 255, 255, 0.024) 4.29%,
-                      rgba(255, 255, 255, 0.01) 72.39%
-                    );
-                  "
-                >
-                  <div
-                    class="pb-2.5 border-b border-b-white/10 mb-3 flex items-center pt-5 justify-between"
-                  >
-                    <ul class="flex items-center gap-11 pl-5">
-                      <li>
-                        <a class="text-white/50 text-[10px]" href="#"
-                          >© 2024 FXIFY</a
-                        >
-                      </li>
-                      <li>
-                        <a class="text-white/50 text-[10px]" href="#"
-                          >Privacy Policy</a
-                        >
-                      </li>
-                      <li>
-                        <a class="text-white/50 text-[10px]" href="#"
-                          >Terms & Conditions</a
-                        >
-                      </li>
-                    </ul>
-                    <ul class="flex items-center gap-1.5 pr-5">
-                      <li>
-                        <a href="http://" target="_blank">
-                          <img
-                            src="./img/footer/logo1.svg"
-                            alt="instagram logo"
-                          />
-                        </a>
-                      </li>
-                      <li>
-                        <a href="http://" target="_blank">
-                          <img
-                            src="./img/footer/logo3.svg"
-                            alt="discord logo"
-                          />
-                        </a>
-                      </li>
-                      <li>
-                        <a href="http://" target="_blank">
-                          <img
-                            src="./img/footer/logo2.svg"
-                            alt="discord logo"
-                          />
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                  <p class="text-white/50 text-[10px] px-5 pb-5">
-                    Alinformation provided on this site is intended solely for
-                    the study purposes related to trading on tinancia markets
-                    and does not serve in any way as a specific investment
-                    recommendation, business recommendation, investment
-                    opportunity analysis or similar genera recommendation
-                    regardina the tradina of investment instruments.
-                  </p>
-                </div>
-              </footer>
-            </div>
-          </section>
+        
         </div>
       </main>
       <!-- Menu start end-->
